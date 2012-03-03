@@ -65,7 +65,7 @@ if (require.main === module) {
 		})
 		.parse(process.argv);
 	if (program.S || program.D) {
-		main(program.N, program.S, program.D).listen(program.P, program.I);
+		main(program.N, program.S, program.D).listen(program.port, program.host);
 	}
 } else { // for test
 	exports.main = main;
