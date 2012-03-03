@@ -16,8 +16,8 @@
 		"node": ">=0.6.0"
 	},
 	"dependencies": {
-      "connect": ">=2.0.1",
-      "commander": ">=0.5.1"
+		"connect": ">=2.0.1",
+		"commander": ">=0.5.1"
 	},
 	"bugs": {
 		"url" : "http://github.com/dkiyatkin/node-vhoster/issues"
