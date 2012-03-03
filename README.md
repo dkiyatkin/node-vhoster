@@ -1,5 +1,7 @@
 # vhoster
 
+Developing multiple applications for different domains on one hosting using a single nodejs instance.
+
 Universal server for sites node.js with virtual hosts.
 
 The common libraries located at the top level and are available to all sites.
