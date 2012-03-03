@@ -7,7 +7,7 @@ var connect = require('connect');
 var program = require('commander');
 
 
-var main = function(hostname, subdomains, domains) {
+var main = function(subhost, subdomains, domains) {
 	process.on('uncaughtException', function (err) {
 		console.log('Caught exception: ' + err);
 	});
@@ -30,7 +30,7 @@ var main = function(hostname, subdomains, domains) {
 					if (s) {
 						vhost(readdir[i], index);
 					} else {
-						vhost(readdir[i] + '.' + hostname, index);
+						vhost(readdir[i] + '.' + subhost, index);
 					}
 				}
 			}
@@ -48,18 +48,18 @@ var main = function(hostname, subdomains, domains) {
 if (require.main === module) {
 	var config;
 	program
-		.version('0.0.2')
+		.version('0.0.3')
 		.option('-n [host]', 'Name of host for subdomains [localhost]', 'localhost')
 		.option('-s <path>', 'Path to subdomains')
 		.option('-d <path>', 'Path to domains')
-		.option('-p [port]', 'Server port [3000]', 3000)
-		.option('-i [port]', 'Server ip [127.0.0.1]', '127.0.0.1')
+		.option('--port <port>', 'Server port [3000]', 3000)
+		.option('--host <host>', 'Server hostname')
 		.on('--help', function() {
 			console.log('  Examples:');
 			console.log();
 			console.log('    $ ' + program.name + ' -n you-host-name.com -s /var/www/subdomains/ -d /var/www/domains/');
 			console.log('    $ ' + program.name + ' -s /var/www/subdomains/ -d /var/www/domains/');
-			console.log('    $ ' + program.name + ' -d /var/www/domains/ -p 8000 -i 0.0.0.0');
+			console.log('    $ ' + program.name + ' -d /var/www/domains/ --port 8000 --host 0.0.0.0');
 			console.log('    $ ' + program.name + ' -s /var/www/subdomains/');
 			console.log();
 		})
@@ -68,5 +68,5 @@ if (require.main === module) {
 		main(program.N, program.S, program.D).listen(program.P, program.I);
 	}
 } else { // for test
-	this.init = main;
+	exports.main = main;
 }

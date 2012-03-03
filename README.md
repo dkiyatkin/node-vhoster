@@ -24,6 +24,18 @@ $ vhoster -n you-host-name.com -s /var/www/subdomains/ -d /var/www/domains/
 
 ### Example .index.js
 
+With http module:
+
+``` javascript
+var http = require('http');
+exports.app = http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World\n');
+});
+```
+
+Or you can use connect or express:
+
 ``` javascript
 var connect = require('connect');
 exports.app = connect().use(function(req, res) {
