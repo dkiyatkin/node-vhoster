@@ -27,11 +27,11 @@ $ vhoster --help
 
     -h, --help     output usage information
     -V, --version  output the version number
-    -n [host]      Name of host for subdomains [localhost]
-    -s <path>      Path to subdomains
-    -d <path>      Path to domains
-    --port <port>  Server port [3000]
-    --host <host>  Server hostname
+    -n [host]      hostname for subdomains [localhost]
+    -s <path>      path to subdomains
+    -d <path>      path to domains
+    --port <port>  server port [3000]
+    --host <host>  server hostname
 
   Examples:
 

@@ -49,11 +49,11 @@ if (require.main === module) {
 	var config;
 	program
 		.version('0.0.3')
-		.option('-n [host]', 'Name of host for subdomains [localhost]', 'localhost')
-		.option('-s <path>', 'Path to subdomains')
-		.option('-d <path>', 'Path to domains')
-		.option('--port <port>', 'Server port [3000]', 3000)
-		.option('--host <host>', 'Server hostname')
+		.option('-n [host]', 'hostname for subdomains [localhost]', 'localhost')
+		.option('-s <path>', 'path to subdomains')
+		.option('-d <path>', 'path to domains')
+		.option('--port <port>', 'server port [3000]', 3000)
+		.option('--host <host>', 'server hostname')
 		.on('--help', function() {
 			console.log('  Examples:');
 			console.log();
