@@ -1,6 +1,6 @@
 # vhoster
 
-Developing multiple applications for different domains on one hosting using a single nodejs instance.
+Developing multiple applications for different domains on one hosting using a single node.js instance.
 
 Universal server for sites node.js with virtual hosts.
 
