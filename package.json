@@ -1,0 +1,34 @@
+{
+	"name": "vhoster",
+	"description": "Developing multiple applications for different domains on one hosting using a single nodejs instance.",
+	"maintainers": [
+		{
+			"name": "Dmitriy Kiyatkin",
+			"web": "https://github.com/dkiyatkin/node-vhoster"
+		}
+	],
+	"version": "0.1",
+	"repository": {
+		"type" : "git",
+		"url" : "http://github.com/caolan/nodeunit.git"
+	},
+	"engines": {
+		"node": ">=0.6.0"
+	},
+	"dependencies": {
+      "connect": ">=2.0.1",
+      "commander": ">=0.5.1"
+	},
+	"bugs": {
+		"url" : "http://github.com/dkiyatkin/node-vhoster/issues"
+	},
+	"licenses" : [
+		{
+			"type": "MIT",
+			"url" : "http://github.com/dkiyatkin/node-vhoster/raw/master/LICENSE"
+		}
+	],
+	"bin" : {
+		"vhoster": "./index.js"
+	}
+}
