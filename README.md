@@ -19,7 +19,26 @@ $ npm install vhoster
 ## Usage
 
 ``` bash
-$ vhoster -n you-host-name.com -s /var/www/subdomains/ -d /var/www/domains/
+$ vhoster --help
+
+  Usage: vhoster [options]
+
+  Options:
+
+    -h, --help     output usage information
+    -V, --version  output the version number
+    -n [host]      Name of host for subdomains [localhost]
+    -s <path>      Path to subdomains
+    -d <path>      Path to domains
+    --port <port>  Server port [3000]
+    --host <host>  Server hostname
+
+  Examples:
+
+    $ vhoster -n you-host-name.com -s /var/www/subdomains/ -d /var/www/domains/
+    $ vhoster -s /var/www/subdomains/ -d /var/www/domains/
+    $ vhoster -d /var/www/domains/ --port 8000 --host 0.0.0.0
+    $ vhoster -s /var/www/subdomains/
 ```
 
 ### Example .index.js
