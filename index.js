@@ -48,7 +48,7 @@ var main = function(hostname, subdomains, domains) {
 if (require.main === module) {
 	var config;
 	program
-		.version('0.1')
+		.version('0.0.1')
 		.option('-n [host]', 'Name of host for subdomains [localhost]', 'localhost')
 		.option('-s <path>', 'Path to subdomains')
 		.option('-d <path>', 'Path to domains')
