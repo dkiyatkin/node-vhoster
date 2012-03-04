@@ -4,8 +4,6 @@ var fs = require('fs');
 var path = require('path');
 var program = require('commander');
 var connect = require('connect');
-var program = require('commander');
-
 
 var main = function(subhost, subdomains, domains) {
 	process.on('uncaughtException', function (err) {
