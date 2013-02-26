@@ -61,3 +61,5 @@ exports.app = connect().use(function(req, res) {
 	res.end('hello world\n');
 });
 ```
+
+More info [http://dkiyatkin.com/vhoster/](http://dkiyatkin.com/vhoster/).

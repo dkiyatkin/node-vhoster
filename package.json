@@ -7,7 +7,7 @@
 			"web": "https://github.com/dkiyatkin/node-vhoster"
 		}
 	],
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"keywords" : [
 		"vhost",
 		"virtual",
@@ -15,7 +15,7 @@
 	],
 	"repository": {
 		"type" : "git",
-		"url" : "http://github.com/caolan/nodeunit.git"
+		"url" : "git://github.com/dkiyatkin/node-vhoster.git"
 	},
 	"engines": {
 		"node": ">=0.6.0"
